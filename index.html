@@ -1,10 +1,45 @@
 <!doctype html>
 <html lang=en>
-  <head>
-    <meta charset=utf-8>
-    <title>Freelancer Quarterly</title>
-  </head>
-  <body>
-    <p>Welcome to Freelancer Quarterly</p>
-  </body>
+
+<head>
+  <meta charset=utf-8>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Freelancer Quarterly : A business journal for modern freelancers</title>
+
+  <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="brand">
+      <img src="logo.png" width="500" height="94" />
+    </div>
+    <div id="social">
+      <a class="twitter-follow-button"
+         href="https://twitter.com/freelancerpaper"
+         data-show-count="false" data-size="large">
+          Follow @freelancerpaper
+        </a>
+    </div>
+  </div>
+</body>
+
 </html>
